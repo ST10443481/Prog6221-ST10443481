@@ -63,7 +63,8 @@ In recent years, South Africa has experienced a significant rise in cyberattacks
 - 📈 Session summaries on exit
 - 🔄 Graceful error handling
 
-- Project Struceture
+- 
+## 📁 Project Structure
 
 - CyberSecurityChatBot/
 ├── Program.cs # Application entry point
@@ -80,6 +81,3 @@ In recent years, South Africa has experienced a significant rise in cyberattacks
 ├── TestChatbot.cs # Testing utility
 ├── TestAudio.cs # Audio testing utility
 └── CyberSecurityChatBot.csproj # Project configuration
-
-
-## 📁 Project Structure
