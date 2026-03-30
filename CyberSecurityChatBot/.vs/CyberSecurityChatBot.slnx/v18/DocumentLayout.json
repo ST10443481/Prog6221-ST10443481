@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog6221-ST10443481\\CyberSecurityChatBot\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C5A9F28E-B2F2-25CB-3786-1E75848FE501}|CyberSecurityChatBot\\CyberSecurityChatBot.csproj|c:\\users\\lab_services_student\\documents\\github\\prog6221-st10443481\\cybersecuritychatbot\\cybersecuritychatbot\\chatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5A9F28E-B2F2-25CB-3786-1E75848FE501}|CyberSecurityChatBot\\CyberSecurityChatBot.csproj|solutionrelative:cybersecuritychatbot\\chatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C5A9F28E-B2F2-25CB-3786-1E75848FE501}|CyberSecurityChatBot\\CyberSecurityChatBot.csproj|c:\\users\\lab_services_student\\documents\\github\\prog6221-st10443481\\cybersecuritychatbot\\cybersecuritychatbot\\services\\uiservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C5A9F28E-B2F2-25CB-3786-1E75848FE501}|CyberSecurityChatBot\\CyberSecurityChatBot.csproj|solutionrelative:cybersecuritychatbot\\services\\uiservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C5A9F28E-B2F2-25CB-3786-1E75848FE501}|CyberSecurityChatBot\\CyberSecurityChatBot.csproj|c:\\users\\lab_services_student\\documents\\github\\prog6221-st10443481\\cybersecuritychatbot\\cybersecuritychatbot\\services\\knowledgebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C5A9F28E-B2F2-25CB-3786-1E75848FE501}|CyberSecurityChatBot\\CyberSecurityChatBot.csproj|solutionrelative:cybersecuritychatbot\\services\\knowledgebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5A9F28E-B2F2-25CB-3786-1E75848FE501}|CyberSecurityChatBot\\CyberSecurityChatBot.csproj|c:\\users\\lab_services_student\\documents\\github\\prog6221-st10443481\\cybersecuritychatbot\\cybersecuritychatbot\\chatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5A9F28E-B2F2-25CB-3786-1E75848FE501}|CyberSecurityChatBot\\CyberSecurityChatBot.csproj|solutionrelative:cybersecuritychatbot\\chatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C5A9F28E-B2F2-25CB-3786-1E75848FE501}|CyberSecurityChatBot\\CyberSecurityChatBot.csproj|c:\\users\\lab_services_student\\documents\\github\\prog6221-st10443481\\cybersecuritychatbot\\cybersecuritychatbot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,11 +46,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "KnowledgeBase.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog6221-ST10443481\\CyberSecurityChatBot\\CyberSecurityChatBot\\Services\\KnowledgeBase.cs",
               "RelativeDocumentMoniker": "CyberSecurityChatBot\\Services\\KnowledgeBase.cs",
@@ -58,18 +58,17 @@
               "RelativeToolTip": "CyberSecurityChatBot\\Services\\KnowledgeBase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUBAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T15:22:34.307Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T15:22:34.307Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UIServices.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog6221-ST10443481\\CyberSecurityChatBot\\CyberSecurityChatBot\\Services\\UIServices.cs",
               "RelativeDocumentMoniker": "CyberSecurityChatBot\\Services\\UIServices.cs",
               "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog6221-ST10443481\\CyberSecurityChatBot\\CyberSecurityChatBot\\Services\\UIServices.cs",
               "RelativeToolTip": "CyberSecurityChatBot\\Services\\UIServices.cs",
-              "ViewState": "AgIAAH8AAAAAAwAAAIAkwIYAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAqwD4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-21T16:55:50.043Z",
               "EditorCaption": ""
@@ -100,13 +99,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ChatBot.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog6221-ST10443481\\CyberSecurityChatBot\\CyberSecurityChatBot\\ChatBot.cs",
               "RelativeDocumentMoniker": "CyberSecurityChatBot\\ChatBot.cs",
               "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog6221-ST10443481\\CyberSecurityChatBot\\CyberSecurityChatBot\\ChatBot.cs",
               "RelativeToolTip": "CyberSecurityChatBot\\ChatBot.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAABAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-19T15:24:46.171Z",
               "EditorCaption": ""

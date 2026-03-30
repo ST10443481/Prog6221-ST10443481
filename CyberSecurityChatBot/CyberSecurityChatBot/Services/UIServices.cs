@@ -71,7 +71,6 @@ namespace CyberSecurityChatBot.Services
             Console.WriteLine(logo);
             Console.ResetColor();
         }
-
         public async Task DisplayAudioStatusAsync(AudioService audioService)
         {
             DisplaySectionHeader("🔊 VOICE GREETING STATUS");
@@ -132,7 +131,7 @@ namespace CyberSecurityChatBot.Services
             DisplaySectionHeader("📋 Available Topics");
 
             Console.WriteLine(@"
-  🔐  Passwords     - Create strong password
+  🔐  Passwords     - Create strong passwords
   📱  Social Media  - Stay safe on social platforms
   🦠  Malware       - Protect from viruses
   🔗  Links         - Identify suspicious URLs
