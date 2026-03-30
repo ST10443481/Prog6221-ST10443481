@@ -9,21 +9,6 @@
 
 A comprehensive command-line cybersecurity awareness chatbot designed to educate South African citizens about online safety practices. This interactive application simulates real-life scenarios where users might encounter cyber threats and provides practical guidance on avoiding common traps.
 
-## 📋 Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Usage Guide](#usage-guide)
-- [Topics Covered](#topics-covered)
-- [Technical Architecture](#technical-architecture)
-- [South African Context](#south-african-context)
-- [Troubleshooting](#troubleshooting)
-- [Future Enhancements](#future-enhancements)
-- [Contributing](#contributing)
-- [License](#license)
-
 ---
 
 ## 🎯 Overview
