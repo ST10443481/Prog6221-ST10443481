@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lab_services_student\\source\\repos\\CyberSecurityChatBot\\CyberSecurityChatBot\\CyberSecurityChatBot.csproj": {}
+    "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog6221-ST10443481\\CyberSecurityChatBot\\CyberSecurityChatBot\\CyberSecurityChatBot.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lab_services_student\\source\\repos\\CyberSecurityChatBot\\CyberSecurityChatBot\\CyberSecurityChatBot.csproj": {
+    "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog6221-ST10443481\\CyberSecurityChatBot\\CyberSecurityChatBot\\CyberSecurityChatBot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lab_services_student\\source\\repos\\CyberSecurityChatBot\\CyberSecurityChatBot\\CyberSecurityChatBot.csproj",
+        "projectUniqueName": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog6221-ST10443481\\CyberSecurityChatBot\\CyberSecurityChatBot\\CyberSecurityChatBot.csproj",
         "projectName": "CyberSecurityChatBot",
-        "projectPath": "C:\\Users\\lab_services_student\\source\\repos\\CyberSecurityChatBot\\CyberSecurityChatBot\\CyberSecurityChatBot.csproj",
+        "projectPath": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog6221-ST10443481\\CyberSecurityChatBot\\CyberSecurityChatBot\\CyberSecurityChatBot.csproj",
         "packagesPath": "C:\\Users\\lab_services_student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lab_services_student\\source\\repos\\CyberSecurityChatBot\\CyberSecurityChatBot\\obj\\",
+        "outputPath": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog6221-ST10443481\\CyberSecurityChatBot\\CyberSecurityChatBot\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

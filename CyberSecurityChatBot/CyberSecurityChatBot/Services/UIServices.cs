@@ -132,7 +132,7 @@ namespace CyberSecurityChatBot.Services
             DisplaySectionHeader("📋 Available Topics");
 
             Console.WriteLine(@"
-  🔐  Passwords     - Create strong passwords
+  🔐  Passwords     - Create strong password
   📱  Social Media  - Stay safe on social platforms
   🦠  Malware       - Protect from viruses
   🔗  Links         - Identify suspicious URLs
