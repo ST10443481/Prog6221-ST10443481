@@ -1,0 +1,170 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lab_services_student\\source\\repos\\CyberSecurityChatBot\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C5A9F28E-B2F2-25CB-3786-1E75848FE501}|CyberSecurityChatBot\\CyberSecurityChatBot.csproj|c:\\users\\lab_services_student\\source\\repos\\cybersecuritychatbot\\cybersecuritychatbot\\chatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5A9F28E-B2F2-25CB-3786-1E75848FE501}|CyberSecurityChatBot\\CyberSecurityChatBot.csproj|solutionrelative:cybersecuritychatbot\\chatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5A9F28E-B2F2-25CB-3786-1E75848FE501}|CyberSecurityChatBot\\CyberSecurityChatBot.csproj|c:\\users\\lab_services_student\\source\\repos\\cybersecuritychatbot\\cybersecuritychatbot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5A9F28E-B2F2-25CB-3786-1E75848FE501}|CyberSecurityChatBot\\CyberSecurityChatBot.csproj|solutionrelative:cybersecuritychatbot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5A9F28E-B2F2-25CB-3786-1E75848FE501}|CyberSecurityChatBot\\CyberSecurityChatBot.csproj|c:\\users\\lab_services_student\\source\\repos\\cybersecuritychatbot\\cybersecuritychatbot\\testaudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5A9F28E-B2F2-25CB-3786-1E75848FE501}|CyberSecurityChatBot\\CyberSecurityChatBot.csproj|solutionrelative:cybersecuritychatbot\\testaudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5A9F28E-B2F2-25CB-3786-1E75848FE501}|CyberSecurityChatBot\\CyberSecurityChatBot.csproj|c:\\users\\lab_services_student\\source\\repos\\cybersecuritychatbot\\cybersecuritychatbot\\services\\uiservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5A9F28E-B2F2-25CB-3786-1E75848FE501}|CyberSecurityChatBot\\CyberSecurityChatBot.csproj|solutionrelative:cybersecuritychatbot\\services\\uiservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5A9F28E-B2F2-25CB-3786-1E75848FE501}|CyberSecurityChatBot\\CyberSecurityChatBot.csproj|c:\\users\\lab_services_student\\source\\repos\\cybersecuritychatbot\\cybersecuritychatbot\\services\\knowledgebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5A9F28E-B2F2-25CB-3786-1E75848FE501}|CyberSecurityChatBot\\CyberSecurityChatBot.csproj|solutionrelative:cybersecuritychatbot\\services\\knowledgebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5A9F28E-B2F2-25CB-3786-1E75848FE501}|CyberSecurityChatBot\\CyberSecurityChatBot.csproj|c:\\users\\lab_services_student\\source\\repos\\cybersecuritychatbot\\cybersecuritychatbot\\services\\audioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5A9F28E-B2F2-25CB-3786-1E75848FE501}|CyberSecurityChatBot\\CyberSecurityChatBot.csproj|solutionrelative:cybersecuritychatbot\\services\\audioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5A9F28E-B2F2-25CB-3786-1E75848FE501}|CyberSecurityChatBot\\CyberSecurityChatBot.csproj|c:\\users\\lab_services_student\\source\\repos\\cybersecuritychatbot\\cybersecuritychatbot\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5A9F28E-B2F2-25CB-3786-1E75848FE501}|CyberSecurityChatBot\\CyberSecurityChatBot.csproj|solutionrelative:cybersecuritychatbot\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5A9F28E-B2F2-25CB-3786-1E75848FE501}|CyberSecurityChatBot\\CyberSecurityChatBot.csproj|c:\\users\\lab_services_student\\source\\repos\\cybersecuritychatbot\\cybersecuritychatbot\\models\\conversations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5A9F28E-B2F2-25CB-3786-1E75848FE501}|CyberSecurityChatBot\\CyberSecurityChatBot.csproj|solutionrelative:cybersecuritychatbot\\models\\conversations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5A9F28E-B2F2-25CB-3786-1E75848FE501}|CyberSecurityChatBot\\CyberSecurityChatBot.csproj|c:\\users\\lab_services_student\\source\\repos\\cybersecuritychatbot\\cybersecuritychatbot\\cybersecuritychatbot.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C5A9F28E-B2F2-25CB-3786-1E75848FE501}|CyberSecurityChatBot\\CyberSecurityChatBot.csproj|solutionrelative:cybersecuritychatbot\\cybersecuritychatbot.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "KnowledgeBase.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\CyberSecurityChatBot\\CyberSecurityChatBot\\Services\\KnowledgeBase.cs",
+              "RelativeDocumentMoniker": "CyberSecurityChatBot\\Services\\KnowledgeBase.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\CyberSecurityChatBot\\CyberSecurityChatBot\\Services\\KnowledgeBase.cs",
+              "RelativeToolTip": "CyberSecurityChatBot\\Services\\KnowledgeBase.cs",
+              "ViewState": "AgIAAIgBAAAAhJmZmRkpwGUBAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T15:22:34.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UIServices.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\CyberSecurityChatBot\\CyberSecurityChatBot\\Services\\UIServices.cs",
+              "RelativeDocumentMoniker": "CyberSecurityChatBot\\Services\\UIServices.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\CyberSecurityChatBot\\CyberSecurityChatBot\\Services\\UIServices.cs",
+              "RelativeToolTip": "CyberSecurityChatBot\\Services\\UIServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T16:55:50.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TestAudio.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\CyberSecurityChatBot\\CyberSecurityChatBot\\TestAudio.cs",
+              "RelativeDocumentMoniker": "CyberSecurityChatBot\\TestAudio.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\CyberSecurityChatBot\\CyberSecurityChatBot\\TestAudio.cs",
+              "RelativeToolTip": "CyberSecurityChatBot\\TestAudio.cs",
+              "ViewState": "AgIAAAIAAADga2ZmZmYEwDAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T16:12:19.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\CyberSecurityChatBot\\CyberSecurityChatBot\\Program.cs",
+              "RelativeDocumentMoniker": "CyberSecurityChatBot\\Program.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\CyberSecurityChatBot\\CyberSecurityChatBot\\Program.cs",
+              "RelativeToolTip": "CyberSecurityChatBot\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T18:29:35.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChatBot.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\CyberSecurityChatBot\\CyberSecurityChatBot\\ChatBot.cs",
+              "RelativeDocumentMoniker": "CyberSecurityChatBot\\ChatBot.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\CyberSecurityChatBot\\CyberSecurityChatBot\\ChatBot.cs",
+              "RelativeToolTip": "CyberSecurityChatBot\\ChatBot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAABAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T15:24:46.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AudioService.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\CyberSecurityChatBot\\CyberSecurityChatBot\\Services\\AudioService.cs",
+              "RelativeDocumentMoniker": "CyberSecurityChatBot\\Services\\AudioService.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\CyberSecurityChatBot\\CyberSecurityChatBot\\Services\\AudioService.cs",
+              "RelativeToolTip": "CyberSecurityChatBot\\Services\\AudioService.cs",
+              "ViewState": "AgIAAEoAAAAAyMzMzMz4vwIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T16:54:36.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\CyberSecurityChatBot\\CyberSecurityChatBot\\Models\\User.cs",
+              "RelativeDocumentMoniker": "CyberSecurityChatBot\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\CyberSecurityChatBot\\CyberSecurityChatBot\\Models\\User.cs",
+              "RelativeToolTip": "CyberSecurityChatBot\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T16:27:11.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Conversations.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\CyberSecurityChatBot\\CyberSecurityChatBot\\Models\\Conversations.cs",
+              "RelativeDocumentMoniker": "CyberSecurityChatBot\\Models\\Conversations.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\CyberSecurityChatBot\\CyberSecurityChatBot\\Models\\Conversations.cs",
+              "RelativeToolTip": "CyberSecurityChatBot\\Models\\Conversations.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T19:03:48.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CyberSecurityChatBot.csproj",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\CyberSecurityChatBot\\CyberSecurityChatBot\\CyberSecurityChatBot.csproj",
+              "RelativeDocumentMoniker": "CyberSecurityChatBot\\CyberSecurityChatBot.csproj",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\CyberSecurityChatBot\\CyberSecurityChatBot\\CyberSecurityChatBot.csproj",
+              "RelativeToolTip": "CyberSecurityChatBot\\CyberSecurityChatBot.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-17T18:42:18.541Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
