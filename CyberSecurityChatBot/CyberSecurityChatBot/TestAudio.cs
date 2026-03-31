@@ -1,80 +1,41 @@
 ﻿using System;
-using System.IO;
-using System.Runtime.InteropServices;
+using System.Threading.Tasks;
+using CyberSecurityChatBot.Services;
 
 namespace CyberSecurityChatBot
 {
-    public static class TestAudio
+    public static class TestAudioOnly
     {
-        public static void TestVoiceGreeting()
+        public static async Task RunAudioTest()
         {
-            Console.WriteLine("Testing Voice Greeting...");
-            Console.WriteLine("======================\n");
+            Console.WriteLine("==========================================");
+            Console.WriteLine("    AUDIO PLAYBACK TEST");
+            Console.WriteLine("==========================================\n");
 
-            // Check platform
-            bool isWindows = RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
-            Console.WriteLine($"Platform: {(isWindows ? "Windows" : "Other")}");
+            var audioService = new AudioService();
 
-            string currentDir = AppDomain.CurrentDomain.BaseDirectory;
-            Console.WriteLine($"Current directory: {currentDir}\n");
+            // Display audio file info
+            Console.WriteLine(audioService.GetAudioFileInfo());
+            Console.WriteLine();
 
-            string[] searchPaths = new[]
+            // Test if audio file is valid
+            if (audioService.IsAudioFileValid())
             {
-                Path.Combine(currentDir, "Services", "Greetings.wav"),
-                Path.Combine(currentDir, "Greetings.wav"),
-                Path.Combine(Directory.GetParent(currentDir)?.Parent?.Parent?.FullName ?? currentDir, "Services", "Greetings.wav")
-            };
+                Console.WriteLine("✅ Audio file is valid and found!");
+                Console.WriteLine("\nPlaying voice greeting in 2 seconds...");
+                await Task.Delay(2000);
 
-            Console.WriteLine("Searching for Greetings.wav in:");
-            foreach (string path in searchPaths)
-            {
-                string fullPath = Path.GetFullPath(path);
-                Console.WriteLine($"  - {fullPath}");
-
-                if (File.Exists(fullPath))
-                {
-                    Console.WriteLine("\n✅ Found audio file!");
-                    FileInfo fileInfo = new FileInfo(fullPath);
-                    Console.WriteLine($"   Full path: {fileInfo.FullName}");
-                    Console.WriteLine($"   File size: {fileInfo.Length / 1024} KB");
-
-                    if (isWindows)
-                    {
-                        Console.WriteLine("\n🔊 Playing audio file...");
-                        try
-                        {
-                            // Use dynamic loading to avoid platform warnings
-                            var soundPlayerType = Type.GetType("System.Media.SoundPlayer, System.Windows.Extensions");
-                            if (soundPlayerType != null)
-                            {
-                                dynamic player = Activator.CreateInstance(soundPlayerType, fullPath);
-                                player.PlaySync();
-                                Console.WriteLine("✅ Audio played successfully!");
-                            }
-                            else
-                            {
-                                Console.WriteLine("⚠️ SoundPlayer not available on this platform");
-                            }
-                        }
-                        catch (Exception ex)
-                        {
-                            Console.WriteLine($"❌ Error playing audio: {ex.Message}");
-                        }
-                    }
-                    else
-                    {
-                        Console.WriteLine("⚠️ Audio playback is only supported on Windows platforms");
-                        Console.WriteLine("File validation passed but playback skipped.");
-                    }
-                    return;
-                }
+                // Play the actual audio
+                await audioService.PlayVoiceGreetingAsync();
             }
-
-            Console.WriteLine("\n❌ Greetings.wav not found!");
-            Console.WriteLine("\nPlease ensure:");
-            Console.WriteLine("1. The file is named 'Greetings.wav'");
-            Console.WriteLine("2. It's placed in the 'Services' folder");
-            Console.WriteLine("3. The file is a valid WAV format");
+            else
+            {
+                Console.WriteLine("❌ Audio file not found!");
+                Console.WriteLine("\nPlease ensure:");
+                Console.WriteLine("1. The file is named 'Greeting.wav' (not 'Greetings.wav')");
+                Console.WriteLine("2. It's located in the Services folder");
+                Console.WriteLine("3. The file is a valid WAV format (PCM, 16-bit)");
+            }
 
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadKey();

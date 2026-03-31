@@ -19,7 +19,7 @@ namespace CyberSecurityChatBot
             // Run audio test
             if (args.Length > 0 && args[0].ToLower() == "--test-audio")
             {
-                TestAudio.TestVoiceGreeting();
+               // TestAudio.TestVoiceGreeting();
                 return;
             }
 

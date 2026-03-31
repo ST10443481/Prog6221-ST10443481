@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Linq;
 using System.Media;
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
@@ -8,42 +10,69 @@ namespace CyberSecurityChatBot.Services
     public class AudioService
     {
         private readonly string _audioFilePath;
+        private readonly bool _isWindows;
 
         public AudioService()
         {
+            // Detect if running on Windows
+            _isWindows = RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
+
             // Get the current directory
             string currentDirectory = AppDomain.CurrentDomain.BaseDirectory;
 
-            // Find the audio file
+            // Your specific file path (corrected from Greetings.wav to Greeting.wav)
             string[] possiblePaths = new[]
             {
-                Path.Combine(currentDirectory, "Services", "Greetings.wav"),
-                Path.Combine(Directory.GetParent(currentDirectory)?.Parent?.Parent?.FullName ?? currentDirectory, "Services", "Greetings.wav"),
+                // Direct path from your project
+                @"C:\Users\lab_services_student\Documents\GitHub\Prog6221-ST10443481\CyberSecurityChatBot\CyberSecurityChatBot\Services\Greeting.wav",
+                
+                // Relative paths from current directory
+                Path.Combine(currentDirectory, "Services", "Greeting.wav"),
+                Path.Combine(currentDirectory, "Services", "Greetings.wav"), // Fallback
+                Path.Combine(currentDirectory, "Resources", "Greeting.wav"),
                 Path.Combine(currentDirectory, "Resources", "Greetings.wav"),
-                Path.Combine(currentDirectory, "Greetings.wav")
+                Path.Combine(currentDirectory, "Greeting.wav"),
+                Path.Combine(currentDirectory, "Greetings.wav"),
+                
+                // Project directory paths
+                Path.Combine(Directory.GetParent(currentDirectory)?.Parent?.Parent?.FullName ?? currentDirectory, "Services", "Greeting.wav"),
+                Path.Combine(Directory.GetParent(currentDirectory)?.Parent?.Parent?.FullName ?? currentDirectory, "Services", "Greetings.wav"),
+                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "..", "Services", "Greeting.wav")
             };
 
+            // Find the first existing file
             _audioFilePath = possiblePaths.FirstOrDefault(File.Exists) ??
-                            Path.Combine(currentDirectory, "Services", "Greetings.wav");
+                            Path.Combine(currentDirectory, "Services", "Greeting.wav");
         }
 
         public async Task PlayVoiceGreetingAsync()
         {
             try
             {
+                // Check if audio file exists
                 if (!File.Exists(_audioFilePath))
                 {
                     Console.WriteLine("⚠️ Voice greeting file not found.");
+                    Console.WriteLine($"Expected location: {_audioFilePath}");
                     await PlayTextBasedGreetingAsync();
                     return;
                 }
 
-                Console.WriteLine("🔊 Playing voice greeting...");
+                Console.WriteLine($"🔊 Found audio file: {Path.GetFileName(_audioFilePath)}");
 
-                await PlayTextBasedGreetingAsync();
-                if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+                // Play actual audio only on Windows
+                if (_isWindows)
                 {
-                    await PlayWindowsAudioAsync();
+                    bool audioPlayed = await PlayWindowsAudioAsync();
+                    if (audioPlayed)
+                    {
+                        Console.WriteLine("✅ Voice greeting completed");
+                    }
+                    else
+                    {
+                        Console.WriteLine("⚠️ Audio playback failed, using text simulation.");
+                        await PlayTextBasedGreetingAsync();
+                    }
                 }
                 else
                 {
@@ -51,7 +80,6 @@ namespace CyberSecurityChatBot.Services
                     await PlayTextBasedGreetingAsync();
                 }
 
-                Console.WriteLine("✅ Voice greeting completed");
                 await Task.Delay(500);
             }
             catch (Exception ex)
@@ -61,15 +89,25 @@ namespace CyberSecurityChatBot.Services
             }
         }
 
-        private async Task PlayWindowsAudioAsync()
+        private async Task<bool> PlayWindowsAudioAsync()
         {
-            await Task.Run(() =>
+            try
             {
-                using (var player = new System.Media.SoundPlayer(_audioFilePath))
+                await Task.Run(() =>
                 {
-                    player.PlaySync();
-                }
-            });
+                    using (var player = new SoundPlayer(_audioFilePath))
+                    {
+                        // PlaySync blocks until audio finishes
+                        player.PlaySync();
+                    }
+                });
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Audio playback error: {ex.Message}");
+                return false;
+            }
         }
 
         private async Task PlayTextBasedGreetingAsync()
@@ -105,7 +143,47 @@ namespace CyberSecurityChatBot.Services
                 return "Audio file not found";
 
             var fileInfo = new FileInfo(_audioFilePath);
-            return $"File: {fileInfo.Name}\nSize: {fileInfo.Length / 1024} KB\nLocation: {fileInfo.FullName}";
+            return $"File: {fileInfo.Name}\n" +
+                   $"Size: {fileInfo.Length / 1024} KB\n" +
+                   $"Location: {fileInfo.FullName}\n" +
+                   $"Platform: {(_isWindows ? "Windows" : "Non-Windows")}";
+        }
+
+        // Helper method to test audio playback
+        public async Task TestAudioPlaybackAsync()
+        {
+            Console.WriteLine("\n=== Testing Audio Playback ===\n");
+            Console.WriteLine($"Audio file path: {_audioFilePath}");
+            Console.WriteLine($"File exists: {File.Exists(_audioFilePath)}");
+            Console.WriteLine($"Platform: {(_isWindows ? "Windows" : "Non-Windows")}");
+
+            if (File.Exists(_audioFilePath))
+            {
+                var fileInfo = new FileInfo(_audioFilePath);
+                Console.WriteLine($"File name: {fileInfo.Name}");
+                Console.WriteLine($"File size: {fileInfo.Length} bytes");
+                Console.WriteLine($"File extension: {fileInfo.Extension}");
+                Console.WriteLine($"Directory: {fileInfo.DirectoryName}");
+
+                // Try to play the audio
+                if (_isWindows)
+                {
+                    Console.WriteLine("\nAttempting to play audio...");
+                    bool played = await PlayWindowsAudioAsync();
+                    Console.WriteLine(played ? "✅ Audio played successfully!" : "❌ Audio playback failed");
+                }
+                else
+                {
+                    Console.WriteLine("\n⚠️ Audio playback only supported on Windows");
+                }
+            }
+            else
+            {
+                Console.WriteLine("\n❌ Audio file not found!");
+                Console.WriteLine("Please ensure Greeting.wav is in the correct location:");
+                Console.WriteLine($"  Expected: {_audioFilePath}");
+                Console.WriteLine("\nCheck if the file name is exactly 'Greeting.wav' (case-sensitive)");
+            }
         }
     }
 }
